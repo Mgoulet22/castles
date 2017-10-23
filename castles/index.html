@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Aequilibrium - the castle company</title>
+    <script src="js/castles.js"></script>
+</head>
+<body>
+        <h1>Aequilibrium - the castle company</h1>
+        <div id="castleResults"></div>
+        <script>
+            /* Please put the land array of integers here, below are a few examples that I used */
+            //var landArray = [3,4,4,3,2,1,2,55,-3,-3,64,64,64,33,33,33];
+            //var landArray = [3,4,2];
+            //var landArray = [3];
+            //var landArray = [];
+            //var landArray = [1,2,3,4,5,6,7,8];
+            //var landArray = [3,3,3,3,3,3,3,3];
+            var landArray = [1,2,3,444,4,5,1,0,2,6,7,7,8,8,9,9,4,3,3,2,4];
+            
+            var numberOfCastles = buildCastles(landArray);
+            document.getElementById("castleResults").innerHTML = "Aequilibrium should build " + 
+                    numberOfCastles + " castle" + (numberOfCastles === 1 ? "" : "s");
+        </script>
+</body>
+</html>
